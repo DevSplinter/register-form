@@ -1,0 +1,259 @@
+@font-face{
+    font-family: 'TitilliumText22L004';
+    src: url(../font/TitilliumText22L004.otf);
+}
+body{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'TitilliumText22L004';
+    overflow-x: hidden;
+}
+.logo{
+    opacity: 0.4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 429px;
+    height: 111px;
+}
+
+.wrapper{
+    width:950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section{
+    box-sizing: border-box;
+    width: 49%;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+article h2{
+    text-align: center;
+    margin:30px 0;
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #000;
+}
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:380px;
+    background-color: #fff;
+    background-clip:content-box;
+    border:solid 20px rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+input,select{
+    position: relative;
+    box-sizing: border-box;
+    width: 340px;
+    height: 40px;
+    padding-left: 80px;
+    border-radius: 3px;
+    border: solid 1px rgb(198,198,198);
+    margin-top:20px;
+}
+select{
+    background: url(../img/arrow.png) no-repeat;
+    background-position: right 5px center;
+    padding-right:15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance:none;
+}
+input:focus, select:focus, textarea:focus{
+    outline: none;
+}
+textarea{
+    resize: none;
+    box-sizing: border-box;
+    width: 340px;
+    height: 230px;
+    border-radius: 3px;
+    border: solid 1px rgb(198,198,198);
+    margin-top:20px;
+    padding:10px;
+}
+.icon-container{
+  position:relative;
+}
+.icon{
+    position: absolute; bottom:5px; left:0;
+    box-sizing: border-box;
+    z-index: 2;
+    width:60px;
+    height:30px;
+    border-right: solid 1px rgb(198,198,198);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button{
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    background: linear-gradient(rgb(173,220,84) 0%, rgb(126,195,31) 100%);
+    border: solid 1px rgb(59,154,0);
+    border-radius: 2px;
+}
+.halfBtn{
+    width:140px;
+    height: 40px;
+    font-size: 18px;
+}
+.fullBtn{
+    position:absolute; bottom: 20px; left:20px;
+    width:340px;
+    height:50px;
+}
+.negativeBtn{
+    background: linear-gradient(rgb(247,111,127) 0%, rgb(240,55,71) 100%);
+    border: solid 1px rgb(162,32,42);
+}
+.disabledBtn{
+    background: linear-gradient(rgb(205,228,176)0%, rgb(171,209,130)100%);
+    border: solid 1px rgb(144,202,109);
+}
+.signIn button{
+   position:absolute; bottom:25px; right:20px; 
+}
+.recover .doneBtn, .subscribe .negativeBtn{
+    position: absolute; bottom: 30px; right:20px;
+    
+}
+.recover .sendBtn, .subscribe .subscribeBtn{
+    position: absolute; bottom: 30px; left:20px;
+}
+.mail{
+    background-image: url(../img/mail.png);
+    
+}
+.location{
+    background-image: url(../img/location.png);
+}
+.pass{
+    background-image: url(../img/lock.png);
+}
+.name{
+    background-image: url(../img/user.png);
+}
+.phone{
+    background-image:url(../img/phone.png);
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+label span{
+    width: 25px;
+    height:25px;
+    border: solid 1px rgb(198,198,198);
+    border-radius: 2px;
+    margin:15px 15px 15px 0;
+}
+input[type="checkbox"]:checked + label span{
+    background-image: url(../img/check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin:15px 20px;
+    text-align: center;
+    color: rgb(175,175,175);
+}
+
+.signIn label{
+    position: absolute; bottom: 5px; left: 0px;
+    
+}
+.register label{
+    position: absolute; bottom: 55px; left: 0px;
+}
+.send label{
+    position: absolute; bottom: 60px; left: 0px;
+}
+.register form{
+    height: 420px;
+}
+.send form{
+    height:500px;
+}
+.signIn form{
+    height:220px;
+}
+.recover form{
+    height:220px;
+}
+.subscribe form{
+    height:160px;
+}
+.downLogo{
+    background-image: url(../img/logo2.png);
+    width: 353px;
+    height: 130px;
+    margin-bottom: 55px;
+}
+
+.valid{
+    border: solid 1px #33cc33;
+}
+.invalid{
+    border: solid 1px #e90101;
+}
+
+.invalid + label span{
+    border:solid 1px #e90101;
+}
+
+.valid + label span{
+    border: solid 1px #33cc33;
+}
+
+.approved{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: in 3s;
+}
+
+
+
+
+@keyframes in{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@media screen and (max-width: 950px){
+    .wrapper{
+        width:100%;
+        
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+    }
+    
+    
+}
